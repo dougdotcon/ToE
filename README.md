@@ -5,6 +5,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 ![Framework: TARDIS Omega](https://img.shields.io/badge/Framework-TARDIS%20Ω%3D117.038-violet.svg)
 ![Precision: 0.000%](https://img.shields.io/badge/Precision-0.000%25-gold.svg)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18134060.svg)](https://doi.org/10.5281/zenodo.18134060)
 
 ![TARDIS Model Overview](assets/tardis_model_overview.png)
 
@@ -40,13 +41,14 @@ This framework derives all properties of matter (mass, charge, spin) and all for
 ## Project Ontology: The Seven Engines
 
 ### Pillar I: Scientific Engines (Validated Physics)
+
 *Location: `1_Motores_Cientificos/`*
 
 | Engine | Description | Key Results | DOI |
 |--------|-------------|-------------|-----|
-| **HolographicOrigin** | The "Theory of Everything" engine. Derives all fundamental constants from Ω=117.038. | Electron mass, α, spin, generations, quarks, Schrödinger derivation | — |
-| **Electron_Holography_Engine** | 16 Python physics engines for holographic calculations. | `lepton_generations.py`, `topological_knot_solver.py`, `holographic_time_solver.py` | — |
-| **ReactiveCosmoMapper** | N-Body simulation solving 7 cosmological problems without Dark Matter. | CMB 3rd Peak, Rotation Curves, JWST Crisis, Satellite Planes | [10.5281/zenodo.18090702](https://doi.org/10.5281/zenodo.18090702) |
+| **HolographicOrigin** | The "Theory of Everything" engine. Derives all fundamental constants from Ω=117.038. | Electron mass, α, spin, generations, quarks, Schrödinger derivation | [10.5281/zenodo.18134060](https://doi.org/10.5281/zenodo.18134060) |
+| **Electron_Holography_Engine** | 16 Python physics engines for holographic calculations. | `lepton_generations.py`, `topological_knot_solver.py`, `holographic_time_solver.py` | [10.5281/zenodo.18134292](https://doi.org/10.5281/zenodo.18134292) |
+| **ReactiveCosmoMapper** | N-Body simulation solving 7 cosmological problems without Dark Matter. | CMB 3rd Peak, Rotation Curves, JWST Crisis, Satellite Planes | [10.5281/zenodo.18131294](https://doi.org/10.5281/zenodo.18131294) |
 | **EntropicGravity_Engine** | Verlinde's Entropic Gravity implementation with full validation suite. | Energy conservation, Disk stability, Lensing, Cosmology | [10.5281/zenodo.18078771](https://doi.org/10.5281/zenodo.18078771) |
 
 #### ReactiveCosmoMapper: CMB Third Peak Recovery
@@ -64,6 +66,7 @@ This framework derives all properties of matter (mass, charge, spin) and all for
 ---
 
 ### Pillar II: Theoretical Laboratories (Hypothesis Simulation)
+
 *Location: `2_Laboratorio_Teorico/`*
 
 | Lab | Description | Key Results |
@@ -97,30 +100,35 @@ This framework derives all properties of matter (mass, charge, spin) and all for
 The discovery process followed a recursive **Hypothesis → Simulation → Correction → Refinement** cycle across 4 phases:
 
 ### Phase 1: Cosmological Calibration
+
 - **Objective:** Resolve the Hubble Tension
 - **Method:** MCMC simulation (CMB vs Supernovae)
 - **Result:** Discovery of **Ω = 117.038**
 - **Code:** `1_Motores_Cientificos/Electron_Holography_Engine/reactive_mcmc_engine.py`
 
 ### Phase 2: The Holographic Electron
+
 - **Objective:** Apply Ω to derive particle properties
 - **Method:** Fractal scaling: $m_e = M_U \cdot \Omega^{-40.23}$
 - **Result:** Electron mass with **0.000% error**
 - **Code:** `1_Motores_Cientificos/Electron_Holography_Engine/entropic_charge_kernel.py`
 
 ### Phase 3: Fractal Generations
+
 - **Objective:** Explain Muon and Tau existence
 - **Method:** Harmonic analysis of wormhole modes
 - **Result:** Unified formula predicting instability of 4th generation
 - **Code:** `1_Motores_Cientificos/Electron_Holography_Engine/lepton_generations.py`
 
 ### Phase 4: Force Unification
+
 - **Objective:** Unify gravity, EM, and strong force
 - **Method:** Knot topology for quarks, entropy gradients for forces
 - **Result:** All forces from single entropic base
 - **Code:** `1_Motores_Cientificos/Electron_Holography_Engine/topological_knot_solver.py`
 
 ### Phase 5: Quantum Mechanics Emergence
+
 - **Objective:** Derive Schrödinger equation from thermodynamics
 - **Method:** Holographic information density evolution
 - **Result:** QM emerges from classical Hamilton-Jacobi + quantum potential
@@ -131,7 +139,8 @@ The discovery process followed a recursive **Hypothesis → Simulation → Corre
 ## Research Conclusions
 
 ### The Universal Parameter
-All properties of matter derive from **a single number**: 
+
+All properties of matter derive from **a single number**:
 
 $$\boxed{\Omega = 117.038}$$
 
@@ -163,6 +172,7 @@ $$\boxed{F = \alpha \cdot \Gamma \cdot T \cdot \nabla S}$$
 *"Information tells the vacuum how to react."*
 
 ### Testable Prediction
+
 **No 4th generation lepton exists** — mass would be ~4.5 TeV > M_W (unstable)
 
 ---
@@ -225,6 +235,20 @@ ORCID: 0009-0000-7535-5008
 
 ---
 
+## Publications (Peer-Reviewed with DOI)
+
+| # | Title | DOI |
+|---|-------|-----|
+| 1 | **Derivation of Fundamental Electronic Properties from Holographic Scaling and Topological Constraints in a Reactive Universe** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18134292.svg)](https://doi.org/10.5281/zenodo.18134292) |
+| 2 | **Unified Cosmology without Dark Matter: The Reactive Entropic Gravity Framework** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18134146.svg)](https://doi.org/10.5281/zenodo.18134146) |
+| 3 | **Black Hole Universe Cosmology: Geometric Inflation via Non-Minimal Coupling** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18134118.svg)](https://doi.org/10.5281/zenodo.18134118) |
+| 4 | **The Holographic Origin of Matter and Dynamics: A Unified Geometric Framework** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18134060.svg)](https://doi.org/10.5281/zenodo.18134060) |
+| 5 | **ReactiveCosmoMapper: A Unified Computational Framework for Entropic Gravity (v2.0.0)** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18131294.svg)](https://doi.org/10.5281/zenodo.18131294) |
+| 6 | **Thermodynamic Constraints on Non-Polynomial Time Complexity: A Physical Proof that P ≠ NP** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18131181.svg)](https://doi.org/10.5281/zenodo.18131181) |
+| 7 | **EntropicGravity-Py: Numerical Validation Framework for Emergent Gravity** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18078771.svg)](https://doi.org/10.5281/zenodo.18078771) |
+
+---
+
 ## Citation
 
 ```bibtex
@@ -232,6 +256,7 @@ ORCID: 0009-0000-7535-5008
   title={The Holographic Origin of Matter and Dynamics: A Unified Geometric Framework},
   author={Fulber, Douglas H. M.},
   year={2025},
+  doi={10.5281/zenodo.18134060},
   institution={Federal University of Rio de Janeiro},
   note={Theory of Everything Project - Ω = 117.038}
 }
