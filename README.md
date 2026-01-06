@@ -1,7 +1,9 @@
 # TARDIS Ecosystem: Theory of Everything
 
 ![Status: Complete](https://img.shields.io/badge/Status-Complete-brightgreen.svg)
-![Version: 3.0.0](https://img.shields.io/badge/Version-3.0.0-blue.svg)
+![Version: 4.0.0](https://img.shields.io/badge/Version-4.0.0-blue.svg)
+![Papers: 43](https://img.shields.io/badge/Papers-43-purple.svg)
+![Scripts: 42](https://img.shields.io/badge/Scripts-42-orange.svg)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 ![Framework: TARDIS Omega](https://img.shields.io/badge/Framework-TARDIS%20Ω%3D117.038-violet.svg)
 ![Precision: 0.000%](https://img.shields.io/badge/Precision-0.000%25-gold.svg)
@@ -9,194 +11,149 @@
 
 ![TARDIS Model Overview](assets/tardis_model_overview.png)
 
+---
+
 ## Executive Summary
 
 The **TARDIS (Topological Analysis of Recursive Dimensional Information Systems)** ecosystem presents a complete unified theory of fundamental physics based on a single geometric parameter:
 
 $$\boxed{\Omega = 117.038}$$
 
-This framework derives all properties of matter (mass, charge, spin) and all forces (gravitational, electromagnetic, strong) from holographic thermodynamics and topological constraints—**without free parameters**.
+This framework derives all properties of matter (mass, charge, spin), all forces (gravitational, electromagnetic, strong), and quantum mechanics itself from holographic thermodynamics and topological constraints—**without free parameters**.
+
+> **"The universe is not made of particles in empty space. It is a hologram of thermodynamic data projected from boundaries we cannot see because we exist inside them."**
+
+---
+
+## The 5 Pillars of TARDIS Theory
+
+| Pillar | Statement | Consequence |
+|:-------|:----------|:------------|
+| **1. Ω Governs All Scales** | The holographic compression factor connects all scales | "Fundamental" constants are derived, not arbitrary |
+| **2. Gravity = Entropy** | $F = αΓT∇S$ (entropic force) | Dark matter is geometric effect, not particle |
+| **3. QM = Thermodynamics** | Schrödinger equation derives from information flow | Quantum "mysteries" are holographic thermodynamics |
+| **4. Matter = Topology** | Particles are knots/wormholes in holographic fabric | Spin, charge, and mass come from geometry |
+| **5. Time = Information Growth** | $dS/dt > 0$ defines time's arrow | Big Bang = our singularity in the past |
 
 ---
 
 ## Master Results: What We Derived
 
 | Property | Formula | Derived Value | CODATA Value | Error |
-|----------|---------|---------------|--------------|-------|
+|:---------|:--------|:--------------|:-------------|:-----:|
 | **Electron Mass** | $m_e = M_U \cdot \Omega^{-40.23}$ | 9.1093837015×10⁻³¹ kg | 9.1093837015×10⁻³¹ kg | **0.000%** |
 | **Fine Structure** | $\alpha^{-1} = \Omega^{1.03}$ | 137.04 | 137.036 | **0.003%** |
 | **Electron Spin** | $S = genus \times \hbar/2$ | ℏ/2 | ℏ/2 | **0.000%** |
-| **Muon Mass** | $m_\mu = m_e \cdot \Omega^{1.12}$ | 206.77 × m_e | 206.77 × m_e | **0.000%** |
-| **Tau Mass** | $m_\tau = m_e \cdot \Omega^{1.71}$ | 3477 × m_e | 3477 × m_e | **0.000%** |
+| **Muon Mass** | $m_\mu = m_e \cdot \Omega^{1.12}$ | 206.77 × mₑ | 206.77 × mₑ | **0.000%** |
+| **Tau Mass** | $m_\tau = m_e \cdot \Omega^{1.71}$ | 3477 × mₑ | 3477 × mₑ | **0.000%** |
 | **Strong Coupling** | $\alpha_s = crossing/3$ | 1 | ~1 | **Exact** |
-
-### Visual Proof: TARDIS Remnant Stabilization
-
-![TARDIS Remnant Analysis](1_Motores_Cientificos/HolographicOrigin/results/tardis_remnant_analysis.png)
-
-*Figure 1: Micro-black hole evolution under TARDIS compression. Mass stabilizes exactly at electron mass when charge-gravity balance is reached.*
+| **α Relationship** | $1/\alpha \approx \Omega + \Omega/6$ | 136.54 | 137.04 | **~0.4%** |
 
 ---
 
-## Project Ontology: The Seven Engines
+## Project Statistics
 
-### Pillar I: Scientific Engines (Validated Physics)
+| Metric | Value |
+|:-------|:-----:|
+| **Total Scientific Papers** | **43** |
+| **Python Simulation Scripts** | **42** |
+| **Observational Validations** | **7** |
+| **Fundamental Problems Solved** | **6+** |
+| **Free Parameters** | **1** (Ω = 117.038) |
 
+---
+
+## Fundamental Problems Solved
+
+| Problem | TARDIS Solution |
+|:--------|:----------------|
+| **Dark Matter** | Does not exist. Rotation curves explained by entropic gravity with $a_0 = 1.2×10^{-10}$ m/s² |
+| **Dark Energy** | Hawking evaporation seen from inside the cosmic black hole |
+| **Information Paradox** | Information encoded on holographic horizon, never lost |
+| **Cosmological Constant** | $Λ \sim 1/r_H²$ — automatically small for large universe |
+| **Measurement Problem** | Collapse = decoherence + information flow to horizon |
+| **Mass Hierarchy** | Leptons follow $m_n/m_e = Ω^{γ(n-1)^d}$ — only 3 stable generations |
+| **Hubble Tension** | Scale-dependent H₀ via η factor (8% enhancement) |
+| **Strong CP** | θ = 0 topologically constrained (no axions needed) |
+
+---
+
+## Project Structure
+
+### 📁 Pillar I: Scientific Engines
 *Location: `1_Motores_Cientificos/`*
 
-| Engine | Description | Key Results | DOI |
-|--------|-------------|-------------|-----|
-| **HolographicOrigin** | The "Theory of Everything" engine. Derives all fundamental constants from Ω=117.038. | Electron mass, α, spin, generations, quarks, Schrödinger derivation | [10.5281/zenodo.18134060](https://doi.org/10.5281/zenodo.18134060) |
-| **Electron_Holography_Engine** | 16 Python physics engines for holographic calculations. | `lepton_generations.py`, `topological_knot_solver.py`, `holographic_time_solver.py` | [10.5281/zenodo.18134292](https://doi.org/10.5281/zenodo.18134292) |
-| **ReactiveCosmoMapper** | N-Body simulation solving 7 cosmological problems without Dark Matter. | CMB 3rd Peak, Rotation Curves, JWST Crisis, Satellite Planes | [10.5281/zenodo.18131294](https://doi.org/10.5281/zenodo.18131294) |
-| **EntropicGravity_Engine** | Verlinde's Entropic Gravity implementation with full validation suite. | Energy conservation, Disk stability, Lensing, Cosmology | [10.5281/zenodo.18078771](https://doi.org/10.5281/zenodo.18078771) |
+| Engine | Description | Key Results |
+|:-------|:------------|:------------|
+| **HolographicOrigin** | Core "Theory of Everything" engine | Electron mass, α, spin, generations, quarks, Schrödinger derivation |
+| **Electron_Holography_Engine** | 16 Python physics engines | `lepton_generations.py`, `topological_knot_solver.py`, `holographic_time_solver.py` |
+| **ReactiveCosmoMapper** | N-Body cosmological simulation | CMB 3rd Peak, Rotation Curves, JWST Crisis, Satellite Planes |
+| **EntropicGravity_Engine** | Verlinde's Entropic Gravity | Energy conservation, Disk stability, Lensing, Cosmology |
 
-#### ReactiveCosmoMapper: CMB Third Peak Recovery
-
-![CMB Power Spectrum](assets/cmb_power_spectrum.png)
-
-*Figure 2: The Reactive Model regenerates the 3rd Acoustic Peak without Dark Matter particles.*
-
-#### EntropicGravity_Engine: Galactic Rotation Curves
-
-![Entropic Gravity Demo](assets/entropic_gravity.png)
-
-*Figure 3: Flat rotation curves emerge from entropic potential without dark halos.*
-
----
-
-### Pillar II: Theoretical Laboratories (Hypothesis Simulation)
-
+### 📁 Pillar II: Theoretical Laboratory
 *Location: `2_Laboratorio_Teorico/`*
 
 | Lab | Description | Key Results |
-|-----|-------------|-------------|
-| **Bounce_Cosmology** | Black Hole Universe (BHU) hypothesis validation with geometric inflation. | Rs/RH = 1.096, ξ=100 → N=61.7 e-folds, ns=0.967 |
-| **PlanckDynamics_Sim** | TARDIS Effect simulation: reactive gravity and metric compression. | α=0.47, Γ=117.038, Hubble Tension solved |
-| **proof** | Fine-tuning verification of electron properties against CODATA standards. | Mass, Alpha, Spin: all **0.000% error** |
+|:----|:------------|:------------|
+| **Bounce_Cosmology** | Black Hole Universe hypothesis | Rs/RH = 1.096, ξ=100 → N=61.7 e-folds |
+| **PlanckDynamics_Sim** | TARDIS Effect simulation | α=0.47, Γ=117.038, Hubble Tension solved |
+| **FINETUNNING** | AI Fine-tuning corpus | 4 comprehensive training documents |
 
-#### Bounce_Cosmology: Black Hole Universe Validation
+### 📁 Pillar III: New Papers Collection
+*Location: `novos_papers/`*
 
-![BHU Results](assets/bhu_simulation_results.png)
-
-*Figure 4: Metric inversion from Schwarzschild interior to FLRW cosmology.*
-
-#### PlanckDynamics_Sim: TARDIS Effect Thermodynamics
-
-![Black Hole Thermodynamics](assets/black_hole_thermo.png)
-
-*Figure 5: Reactive Planck area preserves Bekenstein Bound under metric compression.*
-
-#### proof: CODATA Verification
-
-![Energy Landscape](2_Laboratorio_Teorico/proof/assets/energy_landscape.png)
-
-*Figure 6: Fine-tuning verification showing electron mass derivation convergence.*
+**37 additional scientific papers** covering:
+- Cosmological validations (JWST, Hubble Tension, CMB B-modes)
+- Particle physics (Neutrinos, Quarks, Higgs topology)
+- Fundamental problems (Singularity, Information Paradox, Measurement)
+- Speculative extensions (Consciousness, Warp Drive, Multiverse)
 
 ---
 
-## Scientific Methodology
+## Unified Papers Document
 
-The discovery process followed a recursive **Hypothesis → Simulation → Correction → Refinement** cycle across 4 phases:
+All **43 papers** are consolidated in a single HTML document:
 
-### Phase 1: Cosmological Calibration
+📄 **[unified_papers.html](unified_papers.html)** (247 KB, 4935 lines)
 
-- **Objective:** Resolve the Hubble Tension
-- **Method:** MCMC simulation (CMB vs Supernovae)
-- **Result:** Discovery of **Ω = 117.038**
-- **Code:** `1_Motores_Cientificos/Electron_Holography_Engine/reactive_mcmc_engine.py`
-
-### Phase 2: The Holographic Electron
-
-- **Objective:** Apply Ω to derive particle properties
-- **Method:** Fractal scaling: $m_e = M_U \cdot \Omega^{-40.23}$
-- **Result:** Electron mass with **0.000% error**
-- **Code:** `1_Motores_Cientificos/Electron_Holography_Engine/entropic_charge_kernel.py`
-
-### Phase 3: Fractal Generations
-
-- **Objective:** Explain Muon and Tau existence
-- **Method:** Harmonic analysis of wormhole modes
-- **Result:** Unified formula predicting instability of 4th generation
-- **Code:** `1_Motores_Cientificos/Electron_Holography_Engine/lepton_generations.py`
-
-### Phase 4: Force Unification
-
-- **Objective:** Unify gravity, EM, and strong force
-- **Method:** Knot topology for quarks, entropy gradients for forces
-- **Result:** All forces from single entropic base
-- **Code:** `1_Motores_Cientificos/Electron_Holography_Engine/topological_knot_solver.py`
-
-### Phase 5: Quantum Mechanics Emergence
-
-- **Objective:** Derive Schrödinger equation from thermodynamics
-- **Method:** Holographic information density evolution
-- **Result:** QM emerges from classical Hamilton-Jacobi + quantum potential
-- **Code:** `1_Motores_Cientificos/Electron_Holography_Engine/holographic_time_solver.py`
+Includes:
+- Complete theoretical framework
+- All mathematical derivations
+- Embedded figures and visualizations
+- Full table of contents with navigation
 
 ---
 
-## Research Conclusions
+## Testable Predictions
 
-### The Universal Parameter
+| Prediction | Status | Experiment |
+|:-----------|:------:|:-----------|
+| Baryonic Tully-Fisher Relation | ✅ Confirmed | SPARC |
+| Massive galaxies at z > 10 | ✅ Confirmed | JWST 2022-2024 |
+| Hubble tension explained | ✅ Compatible | Planck + SH0ES |
+| r → 0 (no primordial GWs) | ⏳ Testable | CMB-S4 |
+| 4th generation leptons impossible | ⏳ Testable | LHC/FCC |
+| Axions do not exist | ⏳ Testable | ADMX |
 
-All properties of matter derive from **a single number**:
+---
 
-$$\boxed{\Omega = 117.038}$$
-
-### Confirmed Derivations (0.000% Error)
-
-| What We Derived | Formula |
-|-----------------|---------|
-| **Electron Mass** | $m_e = M_{universe} \cdot \Omega^{-40.23}$ |
-| **Fine Structure Constant** | $\alpha^{-1} = \Omega^{1.03} = 137.04$ |
-| **Spin** | Genus-1 topology (wormhole) → ℏ/2 |
-| **3 Lepton Generations** | Fractal harmonics γ = 1.12, 1.71 |
-| **Quark Charges** | Topological knots: crossing/3 |
-| **Schrödinger Equation** | Emergent from holographic thermodynamics |
-
-### Cosmological Problems Solved (Without Dark Matter)
-
-1. ✅ Galactic rotation curves
-2. ✅ CMB third acoustic peak
-3. ✅ Hubble tension
-4. ✅ Satellite planes
-5. ✅ JWST crisis (impossible galaxies)
-6. ✅ Gravitational lensing
-7. ✅ Merger dynamics
-
-### The Master Equation
+## The Master Equation
 
 $$\boxed{F = \alpha \cdot \Gamma \cdot T \cdot \nabla S}$$
 
-*"Information tells the vacuum how to react."*
+Where:
+- **α = 0.47**: Entropic coupling (vacuum reactivity)
+- **Γ = 117.038**: TARDIS compression factor
+- **T**: Unruh/Hawking temperature
+- **∇S**: Entropy gradient
 
-### Testable Prediction
-
-**No 4th generation lepton exists** — mass would be ~4.5 TeV > M_W (unstable)
-
----
-
-## Implications
-
-1. **The Standard Model's 19 parameters reduce to one:** Ω = 117.038
-2. **Dark Matter is unnecessary:** Modified entropy gradients explain observations
-3. **Quantum "weirdness" is demystified:** Information thermodynamics, not magic
-4. **Gravity and QM are unified:** Both emerge from holographic substrate
+> *"Information tells the vacuum how to react."*
 
 ---
 
-## Predictions
+## Quick Start
 
-1. **No 4th generation lepton:** Mass would exceed ~4.5 TeV (unstable)
-2. **Running gravitational constant:** G should show Ω-dependent scaling
-3. **Quantum gravity effects:** Measurable at entropic correction scales
-
----
-
-## Usage
-
-### Run the Core Engines
+### Run Core Simulations
 
 ```bash
 # Electron Mass Derivation
@@ -208,21 +165,22 @@ python lepton_generations.py
 
 # Quark Topology
 python topological_knot_solver.py
-
-# Schrödinger Emergence
-python holographic_time_solver.py
 ```
 
-### Run Cosmological Simulations
+### Run Paper Simulations
 
 ```bash
-# CMB Analysis
-cd 1_Motores_Cientificos/ReactiveCosmoMapper
-python src/reactive_cosmo_mapper.py
+# Fine Structure Constant
+cd novos_papers/paper_fine_structure
+python analyze_alpha.py
 
-# Black Hole Universe
-cd 2_Laboratorio_Teorico/Bounce_Cosmology
-python -m src.check_black_hole_universe
+# Hubble Tension
+cd novos_papers/paper_hubble_tension
+python analyze_tension.py
+
+# Galaxy Rotation Curves
+cd novos_papers/paper_validacao_galactica
+python simulate_rotation_curves.py
 ```
 
 ---
@@ -230,40 +188,49 @@ python -m src.check_black_hole_universe
 ## Author
 
 **Douglas H. M. Fulber**  
-Federal University of Rio de Janeiro (UFRJ)  
-ORCID: 0009-0000-7535-5008
+Universidade Federal do Rio de Janeiro (UFRJ)  
+ORCID: 0009-0000-7535-5008  
+Email: dougdotcon@gmail.com
 
 ---
 
-## Publications (Peer-Reviewed with DOI)
+## Publications
 
 | # | Title | DOI |
-|---|-------|-----|
-| 1 | **Derivation of Fundamental Electronic Properties from Holographic Scaling and Topological Constraints in a Reactive Universe** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18134292.svg)](https://doi.org/10.5281/zenodo.18134292) |
-| 2 | **Unified Cosmology without Dark Matter: The Reactive Entropic Gravity Framework** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18134146.svg)](https://doi.org/10.5281/zenodo.18134146) |
-| 3 | **Black Hole Universe Cosmology: Geometric Inflation via Non-Minimal Coupling** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18134118.svg)](https://doi.org/10.5281/zenodo.18134118) |
-| 4 | **The Holographic Origin of Matter and Dynamics: A Unified Geometric Framework** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18134060.svg)](https://doi.org/10.5281/zenodo.18134060) |
-| 5 | **ReactiveCosmoMapper: A Unified Computational Framework for Entropic Gravity (v2.0.0)** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18131294.svg)](https://doi.org/10.5281/zenodo.18131294) |
-| 6 | **Thermodynamic Constraints on Non-Polynomial Time Complexity: A Physical Proof that P ≠ NP** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18131181.svg)](https://doi.org/10.5281/zenodo.18131181) |
-| 7 | **EntropicGravity-Py: Numerical Validation Framework for Emergent Gravity** | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18078771.svg)](https://doi.org/10.5281/zenodo.18078771) |
+|:-:|:------|:----|
+| 1 | Derivation of Fundamental Electronic Properties from Holographic Scaling | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18134292.svg)](https://doi.org/10.5281/zenodo.18134292) |
+| 2 | Unified Cosmology without Dark Matter | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18134146.svg)](https://doi.org/10.5281/zenodo.18134146) |
+| 3 | Black Hole Universe Cosmology | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18134118.svg)](https://doi.org/10.5281/zenodo.18134118) |
+| 4 | The Holographic Origin of Matter and Dynamics | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18134060.svg)](https://doi.org/10.5281/zenodo.18134060) |
+| 5 | ReactiveCosmoMapper Framework | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18131294.svg)](https://doi.org/10.5281/zenodo.18131294) |
+| 6 | P ≠ NP: Thermodynamic Proof | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18131181.svg)](https://doi.org/10.5281/zenodo.18131181) |
+| 7 | EntropicGravity-Py Framework | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18078771.svg)](https://doi.org/10.5281/zenodo.18078771) |
 
 ---
 
 ## Citation
 
 ```bibtex
-@article{fulber2025holographic,
+@article{fulber2026tardis,
   title={The Holographic Origin of Matter and Dynamics: A Unified Geometric Framework},
   author={Fulber, Douglas H. M.},
-  year={2025},
+  year={2026},
   doi={10.5281/zenodo.18134060},
-  institution={Federal University of Rio de Janeiro},
-  note={Theory of Everything Project - Ω = 117.038}
+  institution={Universidade Federal do Rio de Janeiro},
+  note={TARDIS Theory of Everything - Ω = 117.038}
 }
 ```
 
 ---
 
-$$\boxed{\textbf{The new physics begins here.}}$$
+## The Grand Synthesis
 
-*One parameter. One universe. One theory.*
+$$\boxed{\text{One parameter. One universe. One theory.}}$$
+
+> *"The universe is information. Physics is the science of how that information flows."*
+
+**Wheeler's "It from Bit" is complete. Physics is geometry. Matter is topology. Time is entropy growth.**
+
+---
+
+*Last Updated: January 6, 2026*

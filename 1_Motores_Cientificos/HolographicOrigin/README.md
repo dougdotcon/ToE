@@ -69,6 +69,7 @@ Most significantly, the Schrodinger equation is derived from first principles as
 | 4 | (Predicted) | ~4.5 TeV | Unstable (exceeds M_W) | N/A |
 
 **Unified Formula:**
+
 ```
 m_n / m_e = Omega^(gamma_mu * (n-1)^d)
 
@@ -86,6 +87,7 @@ Where:
 | Strong (QCD) | alpha_s = crossing/3 = 1 | Topological knot tension | **Exact** |
 
 **Base Force:**
+
 ```
 F_0 = hbar * c / r^2
 
@@ -106,6 +108,7 @@ F_strong = (crossing_number/3) * F_0
 | Bottom (b) | Three-Twist (5_2) | 5 | Left | -1/3 |
 
 **Fractional Charge Formula:**
+
 ```
 Q = Q_total / N_colors = Q_total / 3
 
@@ -119,11 +122,13 @@ Verification:
 The Schrodinger equation is derived from classical thermodynamics:
 
 **Wave Function Ansatz:**
+
 ```
 psi(x,t) = sqrt(rho(x,t)) * exp(i * S(x,t) / hbar)
 ```
 
 **Classical Equations:**
+
 ```
 Continuity:     d_rho/dt + div(rho * v) = 0
 Hamilton-Jacobi: dS/dt + (grad S)^2/(2m) + V + Q = 0
@@ -132,6 +137,7 @@ Where Q = -hbar^2/(2m) * laplacian(sqrt(rho)) / sqrt(rho)
 ```
 
 **Result:**
+
 ```
 i * hbar * d_psi/dt = H * psi
 ```
@@ -151,6 +157,7 @@ Omega = l_P_eff^2 / l_P^2 = 117.038
 ```
 
 This value was derived independently from:
+
 - Galactic rotation curve analysis
 - CMB third acoustic peak fitting
 - Dynamical friction measurements
@@ -164,6 +171,7 @@ N_bits = A / (4 * l_P^2 * ln(2))
 ```
 
 Each fundamental particle corresponds to a topological defect in this holographic fabric:
+
 - **Electron:** Simple wormhole (genus 1, unknot)
 - **Quark:** Wormhole with topological knot (trefoil, etc.)
 
@@ -236,7 +244,6 @@ A TEORIA DE TUDO/
 - SciPy
 - Matplotlib
 
-
 ### Setup
 
 ```bash
@@ -281,17 +288,18 @@ qm_results = run_final_derivation()
 ### Verification Results
 
 All computational proofs have been executed and verified.
+
 - **Detailed Logs:** See `results/*.txt`
 - **Visual Proofs:** See `results/tardis_remnant_analysis.png`
 
 ![TARDIS Remnant Verification](results/tardis_remnant_analysis.png)
-
 
 ### Viewing the Paper
 
 Open `index.html` in a web browser to view the formatted scientific paper with mathematical equations rendered via KaTeX.
 
 For PDF export:
+
 1. Open `index.html` in browser
 2. Press Ctrl+P (or Cmd+P on Mac)
 3. Select "Save as PDF"
@@ -338,6 +346,7 @@ For PDF export:
 **Status:** Ready for submission
 
 **Formats Available:**
+
 - `LANDMARK_PAPER.tex` - LaTeX source
 - `LANDMARK_PAPER.md` - Markdown version
 - `index.html` - Web version (printable to PDF)
@@ -391,7 +400,7 @@ If you use this work in your research, please cite:
   author={Fulber, Douglas H. M.},
   year={2025},
   institution={Federal University of Rio de Janeiro},
-  note={Theory of Everything Project v1.0}
+  note={TARDIS: The Theory of Everything v1.0}
 }
 ```
 

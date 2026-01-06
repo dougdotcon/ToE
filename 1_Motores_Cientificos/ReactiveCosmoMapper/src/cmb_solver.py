@@ -1,10 +1,12 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from reactive_gravity import ReactiveGravity
+from rotating_collapse import RotatingUniverse
 
 class CMBSolver:
     def __init__(self):
         self.grav = ReactiveGravity()
+        self.rot_universe = RotatingUniverse(mass_solar_masses=1e23) # Universe mass approx
         # Constants
         self.H0 = 67.4 # km/s/Mpc (Planck 2018)
         self.omega_b = 0.049 # Baryon density
@@ -83,6 +85,26 @@ class CMBSolver:
         
         plt.savefig("Validation/cmb_power_spectrum.png")
         print("✅ CMB Spectrum generated.")
+        
+    def simulate_axis_of_evil(self):
+        """
+        Generates a CMB map using the Rotating Universe model to visual the 
+        alignment of multiplets (Axis of Evil).
+        """
+        theta, phi, cmb_map = self.rot_universe.generate_cmb_map(resolution=200)
+        
+        plt.figure(figsize=(12, 6))
+        
+        # Simple Mollweide-like projection (or Equirectangular for simplicity here)
+        plt.imshow(cmb_map.T, extent=[0, 2*np.pi, 0, np.pi], aspect='auto', cmap='coolwarm')
+        plt.colorbar(label='Temperature Anisotropy ($\Delta T$)')
+        plt.title('Simulated CMB Anisotropy: The Axis of Evil\n(Rotating Black Hole Universe Hypothesis)')
+        plt.xlabel('Longitude $\phi$')
+        plt.ylabel('Latitude $\theta$')
+        
+        output_path = "Validation/cmb_axis_of_evil.png"
+        plt.savefig(output_path)
+        print(f"✅ Axis of Evil map generated at {output_path}")
 
 if __name__ == "__main__":
     solver = CMBSolver()

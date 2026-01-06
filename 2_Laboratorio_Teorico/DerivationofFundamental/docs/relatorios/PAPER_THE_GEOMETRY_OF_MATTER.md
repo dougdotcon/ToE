@@ -260,7 +260,7 @@ Preliminary analysis suggests $\gamma_\mu \approx 1.1$, consistent with $m_\mu/m
 
 [8] L. Susskind, "The World as a Hologram," J. Math. Phys. **36**, 6377 (1995).
 
-[9] Theory of Everything Project, "Validation of the TARDIS Metric Compression," Technical Report (2025).
+[9] TARDIS: The Theory of Everything, "Validation of the TARDIS Metric Compression," Technical Report (2025).
 
 [10] J. Maldacena and L. Susskind, "Cool horizons for entangled black holes," Fortschr. Phys. **61**, 781 (2013).
 
@@ -309,7 +309,7 @@ It is stored in the project's `constants.json` with associated uncertainty bound
 
 ## Acknowledgments
 
-We thank the  System for computational assistance and the Theory of Everything Project for theoretical framework development.
+We thank the  System for computational assistance and the TARDIS: The Theory of Everything for theoretical framework development.
 
 ---
 
