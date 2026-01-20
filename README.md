@@ -21,6 +21,24 @@ This work proposes a phenomenological extension to the Standard Model of particl
 
 ---
 
+## 🧭 Scope and Non-Claims
+
+To ensure scientific clarity, we define exactly what this framework is and what it is not.
+
+**The TARDIS framework does NOT claim to:**
+
+- Provide a UV-complete quantum gravity theory (like String Theory or Loop Quantum Gravity).
+- Replace Quantum Field Theory or General Relativity at currently tested scales.
+- Derive exact numerical values from pure mathematics without phenomenological calibration.
+
+**Instead, TARDIS is intended as:**
+
+- A **phenomenological geometric framework** that unifies constants.
+- A method for **parameter reduction** via holographic scaling arguments.
+- A generator of **falsifiable mesoscopic and cosmological predictions** (e.g., $M_c$, Lepton stability).
+
+---
+
 ## 📐 Core Postulate: The $\Omega$ Scaling
 
 We posit that the ratio between the bulk information capacity ($I_{bulk}$) and the boundary encoding ($I_{boundary}$) is governed by a universal constant $\Omega$.
@@ -36,14 +54,31 @@ $$ \boxed{\Omega \equiv \frac{\text{Information Capacity (Bulk)}}{\text{Informat
 
 ## 🧪 Falsifiability ("The Kill List")
 
-Unlike traditional "Everything Theories" that are untestable, the TARDIS framework makes specific, dangerous predictions. **Observation of any of the following refutes the theory:**
+Unlike traditional "Everything Theories" that are untestable, the TARDIS framework makes specific, dangerous predictions.
 
-| Prediction | Experimental Test | Falsification Condition |
-|:-----------|:------------------|:------------------------|
-| **Critical Mass ($M_c$)** | Macromolecule Interferometry | **Stable interference fringes for $M > 1.2 \times 10^{-16}$ kg** |
-| **Lepton Hierarchy** | LHC / FCC Searches | **Discovery of a stable 4th generation lepton** |
-| **Fine Structure** | Astrophysical Observation | **Measurable drift of $\alpha$ independent of $\Omega$ evolution** |
-| **Unitarity** | Optomechanics | **Absence of anomalous heating in $M \approx M_c$ oscillators** |
+### Local Refutations (Invalidate Specific Sectors)
+
+* **Failure of $M_c$:** Observation of stable quantum interference for mass $M \gg 10^{-16}$ kg falsifies the holographic collapse hypothesis (but not necessarily the scaling laws).
+- **Lepton Instability:** Discovery of a stable 4th generation lepton falsifies the topological resonance model.
+
+### Global Refutations (Invalidate the Framework)
+
+* **Inconsistency of $\Omega$:** If $\Omega$ calculated from $\alpha$ drifts apart from $\Omega$ calculated from $m_e$ over cosmological time.
+- **Emergence of Free Parameters:** If fitting new data requires introducing arbitrary "fudge factors" not derived from $\Omega$.
+
+---
+
+## 🔍 On Numerology vs. Phenomenology
+
+We explicitly address the concern of "curve fitting":
+
+While the framework employs scaling laws, **these relations are not claimed as exact derivations** in the vacuum. They are consistency constraints imposed by the postulated parameter $\Omega$.
+
+The scientific content lies not in numerical coincidence, but in:
+
+1. **Parameter Reduction:** Reducing 19+ free parameters to 1 ($\Omega$).
+2. **Cross-Domain Consistency:** The same $\Omega$ appears in Cosmology, Particle Physics, and Thermodynamics.
+3. **Refutation Criteria:** The model prohibits specific observations (e.g., Axions, stable massive leptons) that other theories allow.
 
 ---
 
@@ -51,13 +86,13 @@ Unlike traditional "Everything Theories" that are untestable, the TARDIS framewo
 
 All "derivations" below are to be understood as **geometric consistencies** required by the $\Omega$-Postulate.
 
-| Quantity | Scaling Hypothesis | CODATA Value | Agreement |
+| Quantity | Scaling Hypothesis | CODATA | Status |
 |:---------|:-------------------|:-------------|:----------|
-| **Electron Mass** | $m_e = M_U \cdot \Omega^{-40.23}$ | $9.109 \times 10^{-31}$ kg | **Exact (Calibrated)** |
-| **Fine Structure** | $\alpha^{-1} \approx \Omega^{1.03}$ | $137.036$ | **~0.003%** |
-| **Muon Mass** | $m_\mu = m_e \cdot \Omega^{1.12}$ | $1.883 \times 10^{-28}$ kg | **< 0.01%** |
-| **Tau Mass** | $m_\tau = m_e \cdot \Omega^{1.71}$ | $3.167 \times 10^{-27}$ kg | **< 0.01%** |
-| **Critical Mass $M_c$**| $M_c \approx M_P \cdot \Omega^{-4}$ | $\mathbf{1.16 \times 10^{-16}}$ **kg** | *Prediction* |
+| **Electron Mass** | $m_e = M_U \cdot \Omega^{-40.23}$ | $9.109...$ kg | **Fixed (Calibrated)** |
+| **Fine Structure** | $\alpha^{-1} \approx \Omega^{1.03}$ | $137.036$ | **Scaling Match** |
+| **Muon Mass** | $m_\mu = m_e \cdot \Omega^{1.12}$ | $1.883...$ kg | **Hierarchy Match** |
+| **Tau Mass** | $m_\tau = m_e \cdot \Omega^{1.71}$ | $3.167...$ kg | **Hierarchy Match** |
+| **Critical Mass $M_c$**| $M_c \approx M_P \cdot \Omega^{-4}$ | $\mathbf{1.16 \times 10^{-16}}$ **kg** | **Prediction** |
 
 ---
 
@@ -69,6 +104,21 @@ Recent work (Jan 2026) has identified a specific threshold for quantum wavefunct
 > Objects with mass $M > M_c \approx 10^{-16}$ kg exceed the information update rate of the local holographic horizon, forcing spontaneous entropy maximization (collapse).
 
 *See the full paper in `novos_papers/massa_critica/index.html`*
+
+---
+
+## 🚀 Suggested Reading Path
+
+For external physicists and auditors, we recommend this order:
+
+1. **Start Here:** `novos_papers/massa_critica/index.html`
+    *(The shortest, most falsifiable prediction of the framework.)*
+
+2. **Then Check Consistency:** `paper_fine_structure/`
+    *(Demonstrates how $\Omega$ constrains electromagnetism.)*
+
+3. **Full Framework:** `unified_papers_complete.html`
+    *(The complete geometric interpretation and derivation set.)*
 
 ---
 
