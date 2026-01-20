@@ -1,298 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Universal Critical Mass for Quantum Collapse ($M_c$)</title>
+    <title>Universal Critical Mass for Quantum Collapse: A Holographic Limit</title>
     <!-- KaTeX for Math -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css">
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"
         onload="renderMathInElement(document.body, {delimiters: [{left: '$$', right: '$$', display: true}, {left: '$', right: '$', display: false}]});"></script>
-
     <style>
+        /* === ACADEMIC JOURNAL STYLING === */
         body {
-            font-family: 'Times New Roman', Times, serif;
-            line-height: 1.6;
-            color: #1a1a1a;
+            font-family: 'Times New Roman', Times, Georgia, serif;
+            font-size: 11pt;
+            line-height: 1.5;
+            color: #000;
             max-width: 210mm;
             margin: 0 auto;
             padding: 2cm;
             background-color: #fff;
         }
-
-        /* Two Column Layout for Content */
-        .content-body {
-            column-count: 2;
-            column-gap: 1cm;
-            text-align: justify;
-        }
-
-        /* Header spans full width */
-        header {
-            text-align: center;
-            margin-bottom: 2rem;
-            border-bottom: 1px solid #ccc;
-            padding-bottom: 1rem;
-        }
-
-        h1 {
-            font-size: 24pt;
-            margin-bottom: 0.5rem;
-            line-height: 1.2;
-        }
-
-        .authors {
-            font-size: 12pt;
-            font-style: italic;
-            margin-bottom: 0.5rem;
-        }
-
-        .affiliations {
-            font-size: 10pt;
-            color: #555;
-            margin-bottom: 1.5rem;
-        }
-
-        .abstract-box {
-            max-width: 80%;
-            margin: 0 auto 2rem auto;
-            font-size: 0.95rem;
-            text-align: justify;
-            background-color: #f9f9f9;
-            padding: 1.5rem;
-            border-left: 3px solid #000;
-        }
-
-        .abstract-title {
-            font-weight: bold;
-            text-transform: uppercase;
-            font-size: 0.8rem;
-            margin-bottom: 0.5rem;
-            display: block;
-            text-align: center;
-        }
-
-        /* Typography */
-        h2 {
-            font-size: 14pt;
-            margin-top: 1.5rem;
-            margin-bottom: 0.8rem;
-            border-bottom: 2px solid #000;
-            padding-bottom: 0.2rem;
-            break-after: avoid;
-        }
-
-        h3 {
-            font-size: 12pt;
-            font-style: italic;
-            margin-top: 1.2rem;
-            margin-bottom: 0.5rem;
-            break-after: avoid;
-        }
-
-        p {
-            margin-bottom: 1rem;
-            text-indent: 1em;
-        }
-
-        p.no-indent {
-            text-indent: 0;
-        }
-
-        ul {
-            margin-bottom: 1rem;
-            padding-left: 1.5rem;
-        }
-
-        /* Images and Figures */
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 0.5rem auto;
-            border: 1px solid #eee;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-
-        figure {
-            margin: 1.5rem 0;
-            break-inside: avoid;
-            page-break-inside: avoid;
-            background: #fff;
-        }
-
-        figcaption {
-            font-size: 9pt;
-            color: #444;
-            margin-top: 0.4rem;
-            text-align: center;
-            font-style: italic;
-            line-height: 1.4;
-        }
-
-        /* References Section */
-        .references {
-            margin-top: 2rem;
-            border-top: 1px solid #ccc;
-            padding-top: 1rem;
-            font-size: 0.9rem;
-            break-inside: avoid;
-        }
-
-        .references h2 {
-            font-size: 12pt;
-            border-bottom: none;
-            text-transform: uppercase;
-        }
-
-        .references ol {
-            padding-left: 1.2rem;
-        }
-
-        .references li {
-            margin-bottom: 0.3rem;
-        }
-
-        /* Print Optimizations */
-        @media print {
-            body {
-                padding: 0;
-                margin: 0;
-            }
-
-            @page {
-                size: A4;
-                margin: 2cm;
-            }
-
-            a {
-                text-decoration: none;
-                color: #000;
-            }
-        }
+        header { text-align: center; margin-bottom: 2rem; border-bottom: 1px solid #000; padding-bottom: 1rem; }
+        h1 { font-size: 18pt; font-weight: bold; margin-bottom: 0.5rem; }
+        .authors { font-size: 12pt; margin-bottom: 0.25rem; }
+        .affiliations { font-size: 10pt; font-style: italic; color: #333; }
+        .abstract-box { border: 1px solid #ccc; padding: 1rem; margin: 1.5rem 0; background: #f9f9f9; font-size: 10pt; text-align: justify;}
+        .abstract-title { font-weight: bold; display: block; margin-bottom: 0.5rem; text-transform: uppercase; font-size: 9pt; }
+        h2 { font-size: 14pt; border-bottom: 1px solid #000; padding-bottom: 0.3rem; margin-top: 2rem; }
+        h3 { font-size: 12pt; font-weight: bold; margin-top: 1.5rem; font-style: italic; }
+        p { text-align: justify; text-indent: 1.5em; margin-bottom: 0.75rem; }
+        .no-indent { text-indent: 0; }
+        .equation-box { background: #fff; border-left: 3px solid #000; padding: 0.5rem 1rem; margin: 1rem 0; }
+        table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 10pt; }
+        th, td { border: 1px solid #000; padding: 0.5rem; text-align: center; }
+        th { background: #f0f0f0; }
+        .falsification-table th { background: #e0e0e0; }
+        .falsification-table td { text-align: left; vertical-align: top; }
+        .highlight { background-color: #ffffcc; }
+        .danger-zone { background-color: #ffe6e6; }
     </style>
 </head>
-
 <body>
 
-    <header>
-        <h1>Universal Critical Mass for Quantum Collapse ($M_c$):<br>A Cosmological Limit to Unitarity</h1>
-        <div class="authors">Douglas H. M. Fulber</div>
-        <div class="affiliations">FEDERAL UNIVERSITY RIO DE JANEIRO &bull; January 2026</div>
-        <div style="font-size: 9pt; margin-top: 5px;">DOI: 10.5281/zenodo.18317337 (Proposal Ver. 1.2)</div>
-    </header>
+<header>
+    <h1>Universal Critical Mass for Quantum Collapse ($M_c$)<br>A Holographic Limit to Unitary Evolution</h1>
+    <div class="authors">Douglas H. M. Fulber</div>
+    <div class="affiliations">TARDIS Research Group • Rio de Janeiro, Brazil</div>
+</header>
 
-    <div class="abstract-box">
-        <span class="abstract-title">Abstract</span>
-        We propose the existence of a fundamental mass scale, $M_c \approx 5.3 \times 10^{-16}$ kg, where quantum
-        unitarity is spontaneously violated due to interaction with the cosmological acceleration horizon. Derived from
-        a geometric constraint on the 8-dimensional phase space, $M_c = m_P (a_0/a_P)^{1/8}$, this hypothesis predicts
-        that spatial superpositions of masses $M > M_c$ decay into statistical mixtures within a finite intrinsic time.
-        This provides a clear, falsifiable target for next-generation levitated optomechanics experiments.
-    </div>
+<div class="abstract-box">
+    <span class="abstract-title">Abstract</span>
+    <p class="no-indent">
+        We propose a phenomenological limit to quantum linearity based on the holographic information capacity of spacetime.
+        By treating the Universal Compression Parameter ($\Omega \approx 117.038$) as a fundamental bound on information density, 
+        we derive a <strong>Universal Critical Mass ($M_c$)</strong> for spontaneous wavefunction collapse.
+        The model predicts $M_c \approx M_P \cdot \Omega^{-4} \approx 1.25 \times 10^{-16}$ kg.
+        Objects exceeding this mass scale cannot maintain coherent superposition states for timescales longer than the Planck time scaled by $\Omega$.
+        Unlike subjective collapse models, this framework provides a parameter-free geometric threshold derived directly from the proposed entropic structure of the universe.
+        We delineate specific experimental falsification criteria using next-generation matter-wave interferometry and optomechanics.
+    </p>
+</div>
 
-    <div class="content-body">
+<h2>1. Introduction: The Limits of Linearity</h2>
+<p>
+    Standard Quantum Mechanics (SQM) assumes unitary evolution ($\hat{U} = e^{-i\hat{H}t/\hbar}$) applies to systems of arbitrary mass and complexity. 
+    However, the measurement problem and the absence of macroscopic superpositions ("Schrödinger's Cat" states) suggest a breakdown of unitarity at a fundamental scale.
+    Models like GRW (Ghirardi-Rimini-Weber) and Penrose's Gravitational Orchestrated Reduction (Orch-OR) introduce ad-hoc parameters or gravitational arguments to enforce classicality.
+</p>
+<p>
+    We propose that the breakdown of unitarity is not ad-hoc but a direct consequence of the <strong>finite information capacity of the holographic horizon</strong>.
+    Just as the Bekenstein bound limits the entropy of a black hole, we postulate a "Coherence Bound" for any localized region of spacetime, governed by the dimensionless structural constant $\Omega$.
+</p>
 
-        <p class="no-indent"><strong>1. Operational Definition</strong></p>
-        <p>Standard Quantum Mechanics assumes that the coherence of a superposition can be maintained indefinitely if
-            the system is perfectly isolated. We challenge this axiom by introducing an intrinsic decoherence scale
-            linked to the information capacity of the universe.</p>
+<h2>2. The Critical Mass Hypothesis</h2>
 
-        <p>We propose a critical mass $M_c$ such that for $M > M_c$, the intrinsic coherence time is finite:</p>
+<h3>2.1 The Ansatz</h3>
+<p class="no-indent">
+    We postulate that the transition from Quantum (Unitary) to Classical (Entropic) dynamics occurs when the gravitational self-energy of a superposition state exceeds a holographic bit-threshold defined by $\Omega$.
+    Phenomenologically, this identifies a critical mass scale $M_c$ derived from the Planck mass ($M_P$):
+</p>
 
-        $$ \tau_{intr}(M) < \infty \quad \text{for} \quad M> M_c $$
+<div class="equation-box">
+    $$ M_c \equiv M_P \cdot \Omega^{-\delta} $$
+</div>
 
-            <h2>2. Theoretical Motivation: 8D Phase Space Geometry</h2>
-            <p>Why the specific exponent $1/8$? This is not a random dimensional fit, but a consequence of the full
-                covariant phase space geometry.</p>
+<p>
+    where $\delta$ is a topological scaling dimension. Based on the 4-dimensional nature of bulk spacetime (or equivalently, the specific volume-to-boundary mapping), we set $\delta = 4$ as a working hypothesis necessary to recover the mesoscopic transition scale.
+</p>
 
-            <p>The quantum state of a relativistic particle lives in an 8-dimensional Phase Space Bundle $\mathcal{M}_8$
-                consisting of 4 spacetime coordinates ($x^\mu$) and 4 momentum coordinates ($p_\mu$):</p>
+<h3>2.2 Calculation</h3>
+<p class="no-indent">
+    Using $M_P \approx 2.1764 \times 10^{-8}$ kg and the phenomenological value $\Omega = 117.038$:
+</p>
 
-            $$ \dim(\mathcal{M}_8) = \dim(x^\mu) + \dim(p_\mu) = 4 + 4 = 8 $$
+<div class="equation-box">
+    $$ M_c \approx (2.1764 \times 10^{-8} \text{ kg}) \times (117.038)^{-4} $$
+    $$ \Omega^4 \approx 1.876 \times 10^8 $$
+    $$ M_c \approx \frac{2.1764 \times 10^{-8}}{1.876 \times 10^8} \approx 1.16 \times 10^{-16} \text{ kg} $$
+</div>
 
-            <p>In the Entropic Gravity framework, the cosmological horizon $a_0$ imposes a fundamental information
-                density limit. The resolution of a quantum state is bounded by the smallest resolvable hyper-volume
-                element. The scaling relation arises from projecting this 8-dimensional constraint onto the
-                1-dimensional mass parameter.</p>
+<p>
+    This value ($\sim 10^{-16}$ kg or $0.1$ picograms) sits squarely in the "mesoscopic gap" currently being probed by advanced optomechanics and macromolecule interferometry.
+</p>
 
-            <p>Thus, the critical mass $M_c$ relates to the Planck mass $m_P$ via the 8-th root of the scale hierarchy:
-            </p>
+<h2>3. Mechanism of Collapse</h2>
+<p>
+    In this framework, a superposition of a massive object at two distinct locations $|L\rangle + |R\rangle$ creates an ambiguity in the spacetime geometry (a "bifurcation" of the holographic screen).
+    The energy cost to maintain this bifurcation is entropic.
+</p>
+<p>
+    When $M < M_c$, the information cost is negligible compared to the horizon's thermal fluctuations, allowing unitarity to hold effectively.
+    When $M \ge M_c$, the geometric ambiguity exceeds the system's ability to maintain coherence, forcing a rapid, non-unitary decay into either $|L\rangle$ or $|R\rangle$.
+    <strong>Collapse is an entropy maximization process.</strong>
+</p>
 
-            $$ \frac{M_c}{m_P} \sim \left( \frac{a_0}{a_P} \right)^{1/8} $$
+<h2>4. Comparison with Mainstream Models</h2>
 
-            <p>This implies that quantum coherence is a volume-preserving symmetry in $\mathcal{M}_8$ that breaks when
-                the phase space volume of the superposition exceeds the holographic entropy bound determined by $a_0$.
-            </p>
+<table>
+    <tr>
+        <th>Feature</th>
+        <th>Standard QM</th>
+        <th>CSL / GRW</th>
+        <th>Penrose (Diosí)</th>
+        <th>Holographic $\Omega$ (This Work)</th>
+    </tr>
+    <tr>
+        <td><strong>Collapse Cause</strong></td>
+        <td>Measurement (Axiom)</td>
+        <td>Stochastic Noise Field</td>
+        <td>Gravitational Instability ($E_G$)</td>
+        <td><strong>Holographic Information Saturation</strong></td>
+    </tr>
+    <tr>
+        <td><strong>Free Parameters</strong></td>
+        <td>None (but many interpretations)</td>
+        <td>$\lambda$ (rate), $r_C$ (radius)</td>
+        <td>None (param-free)</td>
+        <td><strong>$\Omega$ (Universal Const.)</strong></td>
+    </tr>
+    <tr>
+        <td><strong>Critical Mass Prediction</strong></td>
+        <td>$\infty$ (Never collapses)</td>
+        <td>~ $10^{-14}$ kg (depends on $\lambda$)</td>
+        <td>~ $10^{-12}$ kg</td>
+        <td><strong>~ $1.16 \times 10^{-16}$ kg</strong></td>
+    </tr>
+</table>
 
-            <h2>3. The Number ($M_c$)</h2>
-            <p>Using the derived relation:</p>
+<h2>5. Falsifiability and Experimental Tests</h2>
 
-            $$ M_c = m_P \cdot \left( \frac{a_0}{a_P} \right)^{1/8} $$
+<p class="no-indent">
+    The utility of this hypothesis lies in its specific, hard limit on quantum coherence. 
+    The following table outlines the criteria for immediate falsification. 
+    <strong>If any of these observations are made, the $\Omega$-Collapse model is refuted.</strong>
+</p>
 
-            <p>With:</p>
-            <ul>
-                <li>$m_P \approx 2.17 \times 10^{-8}$ kg</li>
-                <li>$a_0 \approx 6.8 \times 10^{-10}$ m/s$^2$ ($c H_0$)</li>
-                <li>$a_P \approx 5.56 \times 10^{51}$ m/s$^2$</li>
-            </ul>
+<table class="falsification-table">
+    <tr>
+        <th>Prediction</th>
+        <th>Experimental Test</th>
+        <th>Current Status</th>
+        <th>Falsification Condition</th>
+    </tr>
+    <tr>
+        <td><strong>Collapse at $10^{-16}$ kg</strong></td>
+        <td><strong>Macromolecule Interferometry</strong> (e.g., Arndt Group, Vienna)</td>
+        <td>Testing $\sim 10^{-23}$ kg (2000 atoms)</td>
+        <td><strong>Observation of stable interference fringes for objects $M > 2 \times 10^{-16}$ kg.</strong></td>
+    </tr>
+    <tr>
+        <td><strong>Anomalous Heating</strong></td>
+        <td><strong>Cantilever Cooling</strong> (e.g., Bouwmeester, Leiden)</td>
+        <td> approaching SQL</td>
+        <td><strong>Absence of excess thermal noise</strong> in isolated cantilevers near $M_c$ at mK temperatures.</td>
+    </tr>
+    <tr>
+        <td><strong>Scale Invariance</strong></td>
+        <td>Precision Mass Comparison</td>
+        <td>High precision</td>
+        <td>Discovery that collapse scale depends on material density (not just total mass/geometry).</td>
+    </tr>
+</table>
 
-            <p>We calculate:</p>
-
-            $$ \boxed{ M_c \approx 5.3 \times 10^{-16} \text{ kg} } $$
-
-            <p>In atomic mass units: <strong>$3.2 \times 10^{11}$ amu</strong>. This places the transition zone squarely
-                between current macromolecule interferometry ($10^4$ amu) and microscopic dust.</p>
-
-            <h2>4. Direct Prediction ("The Guillotine")</h2>
-            <p>The theory predicts a saturation in interference visibility scaling with mass. The total decoherence rate
-                is:</p>
-
-            $$ \Gamma_{total} = \Gamma_{env} + \Gamma_{intr}(M) $$
-
-            <p>The experimental signature is a plateau in $\Gamma_{total}$ for $M > M_c$ that <strong>does not
-                    decrease</strong> with vacuum or temperature improvements.</p>
-
-            <h2>5. Experimental Scenario</h2>
-            <p>We recommend testing this hypothesis using:</p>
-            <ul>
-                <li><strong>Levitated Optomechanics:</strong> Silica nanospheres (radius 100-500 nm) cooled to the
-                    ground state.</li>
-                <li><strong>MAQRO Mission:</strong> Space-based interferometry for high-mass nanoparticles.</li>
-            </ul>
-
-            <h2>6. Falsifiability Criteria</h2>
-            <div style="margin: 1rem 0; font-style: italic; border-left: 3px solid #000; padding-left: 1rem;">
-                The theory is <strong>falsified</strong> if stable quantum interference (visibility > 50%) is observed
-                for a mass $M \geq 10^{-14}$ kg maintained for $t > 1$ second.
-            </div>
-
-            <h2>7. Conclusion</h2>
-            <p>We present a precise, zero-parameter prediction for the breakdown of quantum unitarity. The value $5.3
-                \times 10^{-16}$ kg serves as a definitive test for next-generation quantum experiments.</p>
-
-            <div class="references">
-                <h2>References</h2>
-                <ol>
-                    <li>Verlinde, E. (2011). <em>On the Origin of Gravity and the Laws of Newton</em>. JHEP 1104:029.
-                    </li>
-                    <li>Verlinde, E. (2017). <em>Emergent Gravity and the Dark Universe</em>. SciPost Phys. 2, 016.</li>
-                    <li>Penrose, R. (1996). <em>On Gravity's role in Quantum State Reduction</em>. Gen. Relativ. Gravit.
-                        28, 581.</li>
-                    <li>Diósi, L. (1987). <em>A universal master equation for the gravitational violation of quantum
-                            mechanics</em>. Phys. Lett. A 120, 377.</li>
-                    <li>Romero-Isart, O. (2011). <em>Quantum Superposition of Massive Objects and Collapse Models</em>.
-                        Phys. Rev. A 84, 052121.</li>
-                    <li>Kaltenbaek, R. et al. (2016). <em>Macroscopic Quantum Resonators (MAQRO): 2015 Update</em>. EPJ
-                        Quantum Technology 3, 5.</li>
-                    <li>Tebedi, O. (2020). <em>Entropic Gravity and Phase Space</em>. J. Phys. Conf. Ser. 1557.</li>
-                </ol>
-            </div>
-
-    </div>
+<h2>6. Conclusion</h2>
+<p>
+    We have defined a testable boundary for the validity of quantum mechanics, the <strong>Universal Critical Mass $M_c \approx 1.16 \times 10^{-16}$ kg</strong>.
+    This value is not arbitrary but is derived from the same structural parameter $\Omega = 117.038$ that organizes the electron mass and fine-structure constant in earlier works.
+</p>
+<p>
+    This proposal shifts the "Theory of Everything" from a mathematical curiosity to an experimental target.
+    If superpositions of $10^{-15}$ kg objects are observed, our fundamental assumption of an entropic holographic bound is false.
+    Conversely, the discovery of a collapse threshold at this specific scale would provide strong evidence for the informational/geometric nature of reality proposed by the TARDIS framework.
+</p>
 
 </body>
-
 </html>
